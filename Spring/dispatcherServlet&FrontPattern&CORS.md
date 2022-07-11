@@ -45,3 +45,13 @@
 * CORS 에러 해결 방법
     1. Configuration: WebConfig 클래스를 생성하여 CorsRegistry의 addMapping을 통해 URL 패턴 정의 가능
     2. Annotation: @CrossOrigin(origin= " " , allowedHeader=" ")를 통해 추가 
+
+
+
+<br>
+<br>
+
+출처
+dispatcher servlet: https://mangkyu.tistory.com/18
+프론트 컨트롤러 패턴: https://velog.io/@suhongkim98/Front-Controller-%ED%8C%A8%ED%84%B4%EA%B3%BC-spring-MVC
+CORS: https://wonit.tistory.com/572
