@@ -32,7 +32,7 @@
 
 * 장점
     * 공통 로직을 먼저 처리할 수 있음
-    *컨트롤러를 구현할 떄 직접 서블릿을 다루지 않아도 됨
+    * 컨트롤러를 구현할 떄 직접 서블릿을 다루지 않아도 됨
 
 <br> 
 
@@ -51,7 +51,7 @@
 <br>
 <br>
 
-출처
-dispatcher servlet: https://mangkyu.tistory.com/18
-프론트 컨트롤러 패턴: https://velog.io/@suhongkim98/Front-Controller-%ED%8C%A8%ED%84%B4%EA%B3%BC-spring-MVC
-CORS: https://wonit.tistory.com/572
+* 출처
+   * dispatcher servlet: https://mangkyu.tistory.com/18
+   * 프론트 컨트롤러 패턴: https://velog.io/@suhongkim98/Front-Controller-%ED%8C%A8%ED%84%B4%EA%B3%BC-spring-MVC
+   * CORS: https://wonit.tistory.com/572
