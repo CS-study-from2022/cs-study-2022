@@ -74,9 +74,43 @@ public class Main{
 
 <br/>
 
+### Interface 와 abstract class의 차이
+
+1. 추상클래스란?
+   추상 메서드를 선언하여 `상속을 통해서 자손 클래스에서 완성하도록 유도`하는 클래스
+   따라서 상속을 위한 클래스이기 때문에 따로 객체를 생성할 수 없다
+
+```Java
+abstract class name{
+    public abstract void a();
+}
+```
+
+2. 인터페이스란?
+   기본설계도라고 할 수 있으며 다른 클래스를 작성하는데 도움을 주는 목적으로 작성하고 클래스와 다르게 다중상속(구현)이 가능
+
+```Java
+interface names{
+    public static final a = 6;
+    public abstract void b();
+}
+```
+
+3.공통점과 차이점 - 공통점: method의 선언만 있고, 구현내용이 없음 - 차이점: 추상 클래스는 extends 키워드를 사용하여 상속하고, `다중상속하는 것이 불가능`함/ 반면에 인터페이스의 경우 implements 키워드를 사용하여 상속하고, `다중상속이 가능`함
+
+<br/>
+
+### 동등성과 동일성
+
+- 동등성(equality): 동등하다는 뜻으로 두 개의 객체가 같은 정보를 갖고 있는 경우-> equals()를 사용할 수 있음
+- 동일성(identity): 동일하다는 뜻으로 두 개의 객체가 완전히 같은 경우-> 주소 값 이 같기 때문에 두 변수가 같은 객체를 가리키게됨 -> ==연산자로 비교
+
 ### 출처
 
 JVM: https://steady-coding.tistory.com/305
 GC: https://tecoble.techcourse.co.kr/post/2021-08-30-jvm-gc/
 Collection: https://gangnam-americano.tistory.com/41
 Generic: https://st-lab.tistory.com/153
+추상클래스: https://myjamong.tistory.com/150
+https://wildeveloperetrain.tistory.com/112
+동등성과 동일성: https://steady-coding.tistory.com/534
