@@ -18,8 +18,19 @@
 
 <br>
 
+## java 8과 11의 특징
+- java 8
+> * 람다 표현식 지원
+> * 메소드 참조 기능 지원 (`클래스::메소드명`)
+> * Stream API 지원
+> * Date, Time, Optional 관련 라이브러리 지원
+- java 11
+> * 람다에서 로컬 변수 var 사용 가능
+
+<br>
+
 ## 접근제어자의 종류와 특징
-- 변수 또는 메소드의 접근 범위를 설정해주기 위해 사용하는 Java 의 예약어를 의미한다.
+- 변수 또는 메소드의 접근 범위를 설정해주기 위해 사용하는 Java의 예약어를 의미한다.
 > 1. public : 모든 접근 허용
 > 2. protected : 동일 패키지 및 상속 관계의 하위 클래스에 대한 접근 허용
 > 3. package : 패키지 내부 클래스에 대한 접근 허용
@@ -48,13 +59,25 @@
 - Set : 순서가 없는 Collection으로, 데이터 중복이 불가능하다.
 - Map : Key와 Value가 한 쌍으로 이루어져 있는 Collection이다.
 
+<br>
+
+## Vector와 ArrayList의 차이
+- Vector
+> * 동기화 되어서 Thread Safe 하다.
+> * 배열의 크기가 100% 단위로 증가한다.
+- ArrayList
+> * 동기화가 되어있지 않아 Thread Safe 하지 않다.
+> * 배열의 크기가 50% 단위로 증가한다.
+
+<br>
+
 ## `==`와 `equals()`의 차이
 - `==` : 대상의 주소값을 비교한다.
 - `equals()` : 대상의 값 자체를 비교한다.
 
 <br>
 
-## Primitive Type(기본형)과 Wrapper Class(참조형)의 차이
+## Primitive Type과 Wrapper Class의 차이
 - Primitive Type : 변수에 값을 그대로 저장한다.
 > * 값을 `==`로 바로 비교할 수 있다.
 > * int, float, double, boolean 등이 있다.
@@ -64,6 +87,24 @@
 
 <br>
 
+## java 디자인 패턴
+- 효율적인 개발을 위해 자주 쓰이는 개발 방식들을 정리한 패턴이다.
+- 생성 패턴(5개) + 구조 패턴(7개) + 행동 패턴(11개) 로 이루어져 있다.
+> #### 디자인 패턴을 사용해야 하는 이유
+> * 개발자들과의 원활한 소통이 가능하다.
+> * 더 우아하고 빠른 개발을 할 수 있다.
+
+### 1. 싱글톤(Singleton) 패턴
+- 인스턴스를 단 하나만 사용하는 패턴
+- `getInstance()` 메소드로 인스턴스를 static 영역에 올리는 방법
+
+### 2. 팩토리 메소드(Factory Method) 패턴
+- 객체 생성을 서브 클래스로 위임하고 캡슐화하는 패턴
+- 팩토리 클래스와 하위 인스턴스의 분리 및 유연한 확장이 가능
+
+<br>
+
 - 출처
   - https://gmlwjd9405.github.io/2017/10/01/basic-concepts-of-development-java.html
   - https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java
+  - https://effortguy.tistory.com/182
